@@ -1,0 +1,14 @@
+{
+    "small_order": 1000,
+    "large_order": 10000,
+    "max_delivery_fee": 1500,
+    "default_distance_fee": 200,
+    "default_distance_meters": 1000,
+    "extra_distance_fee": 100,
+    "extra_distance_meters": 500,
+    "nro_of_cart_items_without_fee": 4,
+    "extra_cart_items_fee": 50,
+    "friday_rush_multiplier": 1.2,
+    "bulk_limit": 12,
+    "bulk_fee": 120
+}
