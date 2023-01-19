@@ -6,7 +6,7 @@ Backend
 ## Deployments
 The API is up and running in Heroku, you can test it with the url:
 
-    * https://delivery-fee-api.herokuapp.com/
+    https://delivery-fee-api.herokuapp.com/
 
 
 ## Description
