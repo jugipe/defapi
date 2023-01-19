@@ -52,7 +52,7 @@ If you want to run the project without docker I suggest using a virtual environm
  ```sh
  sudo apt-get install -y python3-venv
  ```
-2. Unpack the provided zip there
+2. Unpack the provided zip
  ```sh
  unzip defapi-main.zip
  ```
@@ -64,7 +64,7 @@ If you want to run the project without docker I suggest using a virtual environm
  ```sh
  python3 -m venv defapi-main
  ```
-3. Head to the virtual environment
+3. Head to the virtual environment folder
  ```sh
  cd defapi-main
  ```
