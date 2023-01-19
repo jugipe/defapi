@@ -52,19 +52,7 @@ If you want to run the project without docker I suggest using a virtual environm
  ```sh
  sudo apt-get install -y python3-venv
  ```
-2. Create the virtual environment
- ```sh
- python3 -m venv /path/to/directory
- ```
-3. Head to the virtual environment
- ```sh
- cd /path/to/venv
- ```
-4. Activate the virtual environment
- ```sh
- . bin/activate
- ```
-5. Unpack the provided zip there
+2. Unpack the provided zip there
  ```sh
  unzip defapi-main.zip
  ```
@@ -72,13 +60,25 @@ If you want to run the project without docker I suggest using a virtual environm
  ```sh
  tar -xf defapi-main.zip
  ```
+3. Create the virtual environment
+ ```sh
+ python3 -m venv defapi-main
+ ```
+3. Head to the virtual environment
+ ```sh
+ cd defapi-main
+ ```
+4. Activate the virtual environment
+ ```sh
+ . bin/activate
+ ```
 6. Install the required depencies
  ```sh
- pip install -r requirements.txt
+ pip3 install -r requirements.txt
  ```
 7. Head to src and run the tests to check that everything is ok
  ```sh
- cd src/ && Python3 -m pytest -v
+ cd src/ && python3 -m pytest -v
  ```
 8. In the src folder start the api
  ```sh
@@ -89,7 +89,8 @@ If you want to run the project without docker I suggest using a virtual environm
 
 ## Usage
  When the api is up and running I suggest testing it with [Postman](https://www.postman.com/)\
- You can also test it with curl\
+ \
+ You can also test it with curl
  ```sh
  curl -X POST http://localhost:8000/ -H 'Content-Type: application/json' -d '{"cart_value": 790, "delivery_distance": 2235, "number_of_items": 4, "time": "2021-10-12T13:00:00Z"}'
  ```
