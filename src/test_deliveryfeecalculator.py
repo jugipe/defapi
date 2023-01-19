@@ -14,7 +14,7 @@ from deliveryfeecalculator import *
 
 
 def test_calculate_fee():
-    """Method tests that the delivery fee calculation returns correct delivery fee values
+    """Function tests that the delivery fee calculation returns correct delivery fee values
     with known values. 
     """
 
@@ -38,6 +38,9 @@ def test_calculate_fee():
         assert delivery_fee == entry[1]
 
 def test_test_calculate_cart_fee():
+    """Function tests that the cart fee calculation returns correct fee values
+    with known values. 
+    """
     test_list = [
                 ({"cart_value": 790, "number_of_items": 4}, 210),
                 ({"cart_value": 790, "number_of_items": 6}, 310),
@@ -50,6 +53,9 @@ def test_test_calculate_cart_fee():
         assert cart_fee == entry[1]
 
 def test_calculate_distance_fee():
+    """Function tests that the distance fee calculation returns correct fee values
+    with known values. 
+    """
     test_list = [
                 (1000, 200),
                 (1499, 300),
@@ -63,6 +69,7 @@ def test_calculate_distance_fee():
         assert distance_fee == entry[1]
 
 def test_is_friday_rush():
+    """Function tests that the friday rush checking returns correct values"""
     test_list = [
                 (datetime(2023, 1, 13, 15, 5, 00), True),
                 (datetime(2023, 1, 20, 18, 5, 00), True),
