@@ -6,7 +6,7 @@ Backend
 ## Deployments
 The API is up and running in Heroku, you can test it with the url:
 
-    * https://delivery-fee-api.herokuapp.com/
+    https://delivery-fee-api.herokuapp.com/
 
 
 ## Description
@@ -29,13 +29,21 @@ If you want to run the project locally I suggest running it in [Docker](https://
 1. If you don't have docker, follow the instructions in the website for installation
 2. Navigate to wanted folder and unpack the provided zip there
  ```sh
+ unzip defapi-main.zip
+ ```
+ or
+ ```sh
  tar -xf defapi-main.zip
  ```
-3. After unzip run
+3. Head to the folder
+ ```sh
+  cd defapi-main
+ ```
+3. And run
  ```sh
   docker-compose up -d
  ```
-4. And you can test the API at @ http://localhost:8000/
+4. After that you can test the API at @ http://localhost:8000/
 
 ### Without docker
 If you want to run the project without docker I suggest using a virtual environment these instructions apply to debian based systems
@@ -57,6 +65,10 @@ If you want to run the project without docker I suggest using a virtual environm
  . bin/activate
  ```
 5. Unpack the provided zip there
+ ```sh
+ unzip defapi-main.zip
+ ```
+ or
  ```sh
  tar -xf defapi-main.zip
  ```
