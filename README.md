@@ -24,7 +24,7 @@ The application calculates the delivery fee according to the instructions in thi
 To get your local copy up and running follow these steps. The instructions assume that you have a working python interpreter on your local machine
 
 ### With Docker
-If you want to run the project locally I suggest running it in [Docker](https://www.docker.com/) /
+If you want to run the project locally I suggest running it in [Docker](https://www.docker.com/) 
 
 1. If you don't have docker, follow the instructions in the website for installation
 2. Navigate to wanted folder and unpack the provided zip there
