@@ -10,8 +10,8 @@ containing the data of an delivery order as payload and returns the calculated
 delivery fee in the response payload
 """
 from fastapi import FastAPI, HTTPException
-from models import Order
-from deliveryfeecalculator import calculate_delivery_fee
+from models.order import Order
+from delivery_fee_calculator.delivery_fee_calculator import calculate_delivery_fee
 
 app = FastAPI()
 

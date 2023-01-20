@@ -8,7 +8,7 @@ Creator: Jukka Pelli, jukka.pelli@tuni.fi
 This module contains the tests for the API
 """
 from fastapi.testclient import TestClient
-from api import app
+from api.api import app
 
 test_client = TestClient(app)
 

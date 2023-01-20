@@ -5,19 +5,13 @@ Backend
 
 Creator: Jukka Pelli, jukka.pelli@tuni.fi
 
-This module defines the models of Order and Calc_config to against
+This module defines the model of delivery fee calculator settings to against
 we can validate
 """
-from pydantic import BaseModel, BaseSettings
-from datetime import datetime
+from pydantic import BaseSettings
 
-class Order(BaseModel):
-    cart_value: int
-    delivery_distance: int
-    number_of_items: int
-    time: datetime
 
-class Calc_config(BaseSettings):
+class DeliveryFeeCalculatorSettings(BaseSettings):
     small_order: int
     large_order: int
     max_delivery_fee: int     

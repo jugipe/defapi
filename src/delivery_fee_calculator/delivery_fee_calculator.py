@@ -13,13 +13,14 @@ Calculator uses a config.json file to determine the rules of calculating the del
 import json
 from pydantic import ValidationError
 from datetime import datetime
-from models import *
+from models.order import Order
+from models.calculator_settings import DeliveryFeeCalculatorSettings
 
 
-# Parse the config.json to Calc_config and validate it at the same time
+# Parse the config.json to DeliveryFeeCalculatorSettings and validate it at the same time
 with open("config.json") as conf:
     try:
-        calculator_rules = Calc_config.parse_obj(json.load(conf))
+        calculator_rules = DeliveryFeeCalculatorSettings.parse_obj(json.load(conf))
     except ValidationError as err:
         print(err)
 

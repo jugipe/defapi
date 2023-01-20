@@ -9,8 +9,8 @@ This module contains the unittests for the fee calculator, these
 tests need updating if the calculating rules change
 """
 from datetime import datetime
-from models import Order
-from deliveryfeecalculator import *
+from models.order import Order
+from delivery_fee_calculator.delivery_fee_calculator import *
 
 
 def test_calculate_fee():
