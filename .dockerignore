@@ -1,4 +1,4 @@
-src/test*
+src/*/test_*
 __pycache__
 *.pyc
 *.pyo
