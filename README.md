@@ -82,15 +82,17 @@ If you want to run the project without docker I suggest using a virtual environm
  ```
 8. In the src folder start the api
  ```sh
- uvicorn api:app --host 0.0.0.0 --port 8000
+ uvicorn api.api:app --host 0.0.0.0 --port 8000
  ```
 9. And you can test the API at @ http://localhost:8000/
 
 
 ## Usage
  When the api is up and running I suggest testing it with [Postman](https://www.postman.com/)\
+ ![postman](https://user-images.githubusercontent.com/98524196/213646249-3cdcf93f-0bd1-4719-b14d-a581686b31b0.jpg)
  \
- You can also test it with curl
+ \
+ You can also test it in commandline with curl
  ```sh
  curl -X POST http://localhost:8000/ -H 'Content-Type: application/json' -d '{"cart_value": 790, "delivery_distance": 2235, "number_of_items": 4, "time": "2021-10-12T13:00:00Z"}'
  ```
