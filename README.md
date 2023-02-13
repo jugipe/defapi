@@ -7,7 +7,8 @@ Backend
 The API is up and running in Heroku, you can test it with the url:
 
     https://delivery-fee-api.herokuapp.com/
-
+    
+**_NOTE:_** It is running on heroku eco dyno, which may take some time to become active after it has not been used.
 
 ## Description
 A single endpoint HTTP API which calculates the delivery fee based on the information in the request payload and includes the calculated delivery fee in the response payload.\
@@ -27,17 +28,13 @@ To get your local copy up and running follow these steps. The instructions assum
 If you want to run the project locally I suggest running it in [Docker](https://www.docker.com/) 
 
 1. If you don't have docker, follow the instructions in the website for installation
-2. Navigate to wanted folder and unpack the provided zip there
+2. Navigate to wanted folder and clone the repository
  ```sh
- unzip defapi-main.zip
- ```
- or
- ```sh
- tar -xf defapi-main.zip
+ git clone https://github.com/jugipe/defapi.git
  ```
 3. Head to the folder
  ```sh
-  cd defapi-main
+  cd defapi
  ```
 3. And run
  ```sh
@@ -46,27 +43,23 @@ If you want to run the project locally I suggest running it in [Docker](https://
 4. After that you can test the API at @ http://localhost:8000/
 
 ### Without docker
-If you want to run the project without docker I suggest using a virtual environment these instructions apply to debian based systems
+If you want to run the project without docker I suggest using a virtual environment, these instructions apply to debian based systems
 
 1. Install the virtual environment
  ```sh
  sudo apt-get install -y python3-venv
  ```
-2. Unpack the provided zip
+2. Navigate to wanted folder and clone the repository
  ```sh
- unzip defapi-main.zip
- ```
- or
- ```sh
- tar -xf defapi-main.zip
+ git clone https://github.com/jugipe/defapi.git
  ```
 3. Create the virtual environment
  ```sh
- python3 -m venv defapi-main
+ python3 -m venv defapi
  ```
 3. Head to the virtual environment folder
  ```sh
- cd defapi-main
+ cd defapi
  ```
 4. Activate the virtual environment
  ```sh
@@ -100,6 +93,3 @@ If you want to run the project without docker I suggest using a virtual environm
  ```sh
  {"delivery_fee": 710}
  ```
-
-## Contact
-Jukka Pelli - jukka.pelli@tuni.fi
